@@ -19,27 +19,27 @@ austin = partial(dt.now, tz=cst)  # gives current time in austin, use instead of
 # event format is (time, event name, event link if available)
 sched = {
     30: [
-        ("10:00 am", "Breakfast Served", ""),
-        ("11:00 am", "Opening Ceremony", ""),
-        ("11:00 am", "Intro to Git (GDC 5.302)", ""),
+        ("10:00 am", "Breakfast Served (GDC atrium)", ""),
+        ("11:00 am", "Opening Ceremony (GDC 2.216)", "https://utexas.zoom.us/my/adventure.room"),
+        ("11:30 am", "Intro to Git (GDC 5.302)", "https://utexas.zoom.us/my/castle.room"),
         ("12:00 pm", "Hacking Starts", ""),
-        ("12:00 pm", "Intro to Python (GDC 5.302)", ""),
+        ("12:30 pm", "Intro to Python (GDC 5.304)", "https://utexas.zoom.us/my/adventure.room"),
+        ("1:00 pm", "Talk w/ Ploomber", "https://utexas.zoom.us/my/castle.room"),
         ("1:00 pm", "Team Matching", ""),
-        ("1:00 pm", "Intro to App Dev (GDC 5.302)", ""),
-        ("2:00 pm", "Intro to Web Dev (GDC 5.302)", ""),
-        ("3:00 pm", "Hackathon Olympics (GDC Courtyard)", ""),
-        ("4:00 pm", "How to Recruit (GDC 5.302)", ""),
-        ("8:00 pm", "Resume Reviews (GDC 5.302)", ""),
-        ("9:00 pm", "Smash Bros Ultimate Tourney (GDC 5.302)", ""),
-        ("10:00 pm", "Karaoke/Movie Night (GDC 5.302)", ""),
+        ("2:00 pm", "MLH Talk", "https://utexas.zoom.us/my/adventure.room"),
+        ("3:00 pm", "Hackathon Olympics (GDC Courtyard)", "https://utexas.zoom.us/my/castle.room"),
+        ("4:00 pm", "How to Recruit (GDC 5.302)", "https://utexas.zoom.us/my/adventure.room"),
+        ("6:00 pm", "Dinner Served (GDC atrium)", ""),
+        ("8:00 pm", "Resume Reviews (GDC 5.302)", "https://utexas.zoom.us/my/castle.room"),
+        ("9:00 pm", "Smash Bros Ultimate Tourney (GDC 5.302)", "https://utexas.zoom.us/my/adventure.room"),
     ],
     31: [
-        ("11:00 am", "Office Hours", ""),
+        ("11:00 am", "Office Hours (GDC 5.302)", "https://utexas.zoom.us/my/adventure.room"),
         ("12:00 pm", "Hacking Ends", ""),
         ("12:00 pm", "Lunch Served", ""),
-        ("1:00 pm", "Judging Starts", ""),
+        ("1:00 pm", "Judging Starts", "https://utexas.zoom.us/my/adventure.room"),
         ("3:00 pm", "Judging Ends", ""),
-        ("4:00 pm", "Closing Ceremony (GDC 2.216)", ""),
+        ("4:00 pm", "Closing Ceremony (GDC 2.216)", "https://utexas.zoom.us/my/adventure.room"),
     ],
 }
 
@@ -221,3 +221,4 @@ class Times(commands.Cog):
 
 def setup(bot):
     bot.add_cog(Times(bot))
+
